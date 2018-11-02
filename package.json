@@ -9,9 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "electron-build": "ng --build --base-href",
+    "electron-build": "ng --build --prod",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
+    "dist": "electron-builder --prod",
     "electron-packager":"--platform=darwin"
   },
   "build": {
