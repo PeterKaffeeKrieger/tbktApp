@@ -9,14 +9,14 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "electron-build": "ng --build --prod",
+    "electron-build": "ng --build --base-href",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
   "build": {
-  "appId": "your.id",
+  "appId": "teambuktuappid",
   "mac": {
-    "category": "your.app.category.type"
+    "category": "teambuktuappidtype"
   }
 },
   "private": true,
