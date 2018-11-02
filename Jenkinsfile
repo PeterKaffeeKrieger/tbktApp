@@ -12,6 +12,8 @@ pipeline {
 		sh 'npm i -g @angular/cli'
 		sh 'ng build'
 		sh 'npm run electron-build'
+		sh 'npm install electron-packager -g'
+		sh 'npm install electron-packager --save-dev'
             }
         }
     }
