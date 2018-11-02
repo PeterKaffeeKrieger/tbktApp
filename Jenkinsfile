@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'npm install' 
 		sh 'npm i -g @angular/cli'
-		sh 'ng build'
+		sh 'npm run electron'
             }
         }
     }
