@@ -9,6 +9,8 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'npm install' 
+		sh 'npm i -g @angular/cli'
+		sh 'npm run electron'
             }
         }
     }
