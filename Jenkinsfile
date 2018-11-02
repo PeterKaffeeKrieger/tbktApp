@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'node:8-alpine' 
-            args '-p 3000:3000' 
+            image '8.12.0-alpine' 
+            args '-p 4200: 4200' 
         }
     }
     stages {
@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'npm install' 
 		sh 'npm i -g @angular/cli'
-		sh 'npm run electron'
+		sh 'ng build'
             }
         }
     }
