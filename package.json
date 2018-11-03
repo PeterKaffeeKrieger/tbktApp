@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron": "electron .",
-    "electron-build": "ng build --env=prod && electron .",
+    "electron-build": "ng build",
     "electron-package-darwin":"electron-packager . --platform=darwin --no-prune --ignore=/node_modules --ignore=/e2e --ignore=/src"
   },
   "private": true,
