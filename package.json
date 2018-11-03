@@ -12,12 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron": "electron .",
-    "electron-build": "ng build --prod"
-  },
-  "build": {
-  "appId": "teambuktuappid",
-  "mac": {
-    "category": "teambuktuappidtype"
+    "electron-build": "ng -- build --prod"
   }
 },
   "private": true,
