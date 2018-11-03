@@ -9,7 +9,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'npm install' 
-		sh 'yarn install'
+		sh 'npm install --save yarn-install'
 		sh 'yarn add electron-builder --dev'
 		sh 'npm i -g @angular/cli'
 		sh 'npm run electron-build'
