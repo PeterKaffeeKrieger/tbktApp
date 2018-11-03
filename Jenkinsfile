@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh 'npm install'
 		sh 'npm run electron-build'
+		sh 'npm run electron-package-darwin'
             }
         }
     }

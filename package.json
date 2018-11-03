@@ -12,7 +12,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron": "electron .",
-    "electron-build": "ng -- build --prod"
+    "electron-build": "ng -- build --prod",
+    "electron-package-darwin":"electron-packager . --platform=darwin --no-prune --ignore=/node_modules --ignore=/e2e --ignore=/src"
   },
   "private": true,
   "dependencies": {
@@ -51,7 +52,8 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.1"
+    "typescript": "~3.1.1",
+    "electron-packager":"~12.2.0"
   },
   "postinstall": "electron-builder install-app-deps"
 }
